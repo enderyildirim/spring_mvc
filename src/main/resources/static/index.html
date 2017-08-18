@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- META DATAS -->
+<meta charset="ISO-8859-1">
+
+<!-- FRAMEWORKS -->
+<script src="js/libs/angular.min.js"></script>
+
+
+<!-- CONTROLLERS -->
+<script type="text/javascript">
+	var app = angular.module("app", []);
+	app.controller('ctrl', function($scope) {
+		$scope.message = "AngularJS";
+	});
+</script>
+
+</head>
+<body>
+
+	<h1>INDEX HTML</h1>
+
+	<div ng-app="app" ng-controller="ctrl">
+		<p>{{message}}</p>
+	</div>
+
+</body>
+</html>
